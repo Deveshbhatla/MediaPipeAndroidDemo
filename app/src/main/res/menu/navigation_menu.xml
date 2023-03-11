@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_vision"
+        android:icon="@drawable/twotone_visibility_24"
+        android:title="Vision" />
+    <item
+        android:id="@+id/navigation_text"
+        android:icon="@drawable/twotone_text_snippet_24"
+        android:title="Text" />
+    <item
+        android:id="@+id/navigation_audio"
+        android:icon="@drawable/twotone_mic_24"
+        android:title="Audio" />
+    <item
+        android:id="@+id/navigation_about"
+        android:icon="@drawable/twotone_info_24"
+        android:title="About" />
+</menu>
