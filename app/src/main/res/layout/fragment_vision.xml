@@ -23,6 +23,7 @@
             android:padding="20dp">
             <!-- Row1Column1-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/objectDetectionCardview"
                 android:foreground="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -49,13 +50,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/mediapipe_logo"
+                        android:src="@drawable/object_detection"
                         android:layout_weight="1"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Object  Detection"
+                        android:text="Object Detection"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
@@ -67,6 +68,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/imageClassificationCardview"
                 android:foreground="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -92,13 +94,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/mediapipe_logo"
+                        android:src="@drawable/image_classification"
                         android:layout_weight="1"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Image Segmentataion"
+                        android:text="Image Classification"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
@@ -111,6 +113,7 @@
 
             <!-- Row2Column1-->
             <androidx.cardview.widget.CardView
+                android:id="@+id/imageEmbedderCardview"
                 android:foreground="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -136,13 +139,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/mediapipe_logo"
+                        android:src="@drawable/image_embedder"
                         android:layout_weight="1"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Hand Recognition"
+                        android:text="Image Embedder"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
@@ -155,6 +158,7 @@
 
             <!-- Row2Column2 -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/gestureRecognitionCardview"
                 android:foreground="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -180,7 +184,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/mediapipe_logo"
+                        android:src="@drawable/gesture_recognition"
                         android:layout_weight="1"/>
 
                     <TextView

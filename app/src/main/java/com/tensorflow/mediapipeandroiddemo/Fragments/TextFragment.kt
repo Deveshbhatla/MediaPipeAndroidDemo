@@ -1,11 +1,18 @@
 package com.tensorflow.mediapipeandroiddemo.Fragments
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.cardview.widget.CardView
 import com.tensorflow.mediapipeandroiddemo.R
+import com.tensorflow.mediapipeandroiddemo.imageClassification.ImageClassificationActivity
+import com.tensorflow.mediapipeandroiddemo.objectDetection.ObjectDetectionActivity
+import com.tensorflow.mediapipeandroiddemo.textClassification.TextClassificationActivity
+import com.tensorflow.mediapipeandroiddemo.textEmbedder.TextEmbedderActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,9 +40,29 @@ class TextFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_text, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_text, container, false)
+
+        val textClassificationCardviewButton = view.findViewById<CardView>(R.id.textClassificationCardview);
+        textClassificationCardviewButton.setOnClickListener()
+        {
+            Log.d("Text Classification cardview: ", "Selected")
+            val intent = Intent (getActivity(), TextClassificationActivity::class.java)
+            getActivity()?.startActivity(intent)
+
+        }
+
+        val textEmbedderCardviewButton = view.findViewById<CardView>(R.id.textEmbedderCardview);
+        textEmbedderCardviewButton.setOnClickListener()
+        {
+            Log.d("Text Embedder cardview: ", "Selected")
+            val intent = Intent (getActivity(), TextEmbedderActivity::class.java)
+            getActivity()?.startActivity(intent)
+        }
+
+        return view;
+
     }
 
     companion object {

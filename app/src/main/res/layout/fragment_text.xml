@@ -23,6 +23,7 @@
             android:padding="20dp">
         <!-- Row1Column1-->
         <androidx.cardview.widget.CardView
+            android:id="@+id/textClassificationCardview"
             android:foreground="?attr/selectableItemBackground"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -49,7 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/mediapipe_logo"
+                    android:src="@drawable/text_classification"
                     android:layout_weight="1"/>
 
                 <TextView
@@ -67,6 +68,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/textEmbedderCardview"
             android:foreground="?attr/selectableItemBackground"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -92,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/mediapipe_logo"
+                    android:src="@drawable/text_embedder"
                     android:layout_weight="1"/>
 
                 <TextView

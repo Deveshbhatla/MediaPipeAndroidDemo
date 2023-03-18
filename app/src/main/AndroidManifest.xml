@@ -12,16 +12,48 @@
         android:theme="@style/Theme.MediaPipeAndroidDemo"
         tools:targetApi="31">
         <activity
+            android:name=".audioEmbedder.AudioEmbedderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar"/>
+        <activity
+            android:name=".audioClassification.AudioClassificationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar"/>
+        <activity
+            android:name=".textEmbedder.TextEmbedderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".textClassification.TextClassificationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".gestureRecognition.GestureRecognitionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".imageEmbedder.ImageEmbedderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".imageClassification.ImageClassificationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image_classification"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".objectDetection.ObjectDetectionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

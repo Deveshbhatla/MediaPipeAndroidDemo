@@ -1,6 +1,8 @@
 package com.tensorflow.mediapipeandroiddemo
 
+import android.content.res.Configuration
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -26,8 +28,9 @@ class MainActivity : AppCompatActivity() {
             bottomNav.selectedItemId = R.id.navigation_vision
 
         }
+
     }
-     val navListener =
+     private val navListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             var selectedFragment: Fragment? = null
             when (item.itemId) {
