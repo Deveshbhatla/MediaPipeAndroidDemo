@@ -9,10 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import com.tensorflow.mediapipeandroiddemo.R
-import com.tensorflow.mediapipeandroiddemo.imageClassification.ImageClassificationActivity
-import com.tensorflow.mediapipeandroiddemo.objectDetection.ObjectDetectionActivity
-import com.tensorflow.mediapipeandroiddemo.textClassification.TextClassificationActivity
-import com.tensorflow.mediapipeandroiddemo.textEmbedder.TextEmbedderActivity
+import com.tensorflow.mediapipeandroiddemo.textClassification.SpamDetectionActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -44,22 +41,22 @@ class TextFragment : Fragment() {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_text, container, false)
 
-        val textClassificationCardviewButton = view.findViewById<CardView>(R.id.textClassificationCardview);
-        textClassificationCardviewButton.setOnClickListener()
+        val spamDetectionCardviewButton = view.findViewById<CardView>(R.id.spamDetectionCardview);
+        spamDetectionCardviewButton.setOnClickListener()
         {
             Log.d("Text Classification cardview: ", "Selected")
-            val intent = Intent (getActivity(), TextClassificationActivity::class.java)
+            val intent = Intent (getActivity(), SpamDetectionActivity::class.java)
             getActivity()?.startActivity(intent)
 
         }
 
-        val textEmbedderCardviewButton = view.findViewById<CardView>(R.id.textEmbedderCardview);
-        textEmbedderCardviewButton.setOnClickListener()
-        {
-            Log.d("Text Embedder cardview: ", "Selected")
-            val intent = Intent (getActivity(), TextEmbedderActivity::class.java)
-            getActivity()?.startActivity(intent)
-        }
+//        val textEmbedderCardviewButton = view.findViewById<CardView>(R.id.textEmbedderCardview);
+//        textEmbedderCardviewButton.setOnClickListener()
+//        {
+//            Log.d("Text Embedder cardview: ", "Selected")
+//            val intent = Intent (getActivity(), TextEmbedderActivity::class.java)
+//            getActivity()?.startActivity(intent)
+//        }
 
         return view;
 

@@ -1,12 +1,12 @@
-package com.tensorflow.mediapipeandroiddemo.textClassification
+package com.tensorflow.mediapipeandroiddemo.ImageSegmentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.tensorflow.mediapipeandroiddemo.R
 
-class TextClassificationActivity : AppCompatActivity() {
+class FoodSegmentationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_text_classification)
+        setContentView(R.layout.activity_food_segmentation)
     }
 }

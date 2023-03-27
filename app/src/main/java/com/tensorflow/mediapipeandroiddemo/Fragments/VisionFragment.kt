@@ -7,16 +7,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.RelativeLayout
 import androidx.cardview.widget.CardView
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.tensorflow.mediapipeandroiddemo.ImageSegmentation.FoodSegmentationActivity
 import com.tensorflow.mediapipeandroiddemo.R
-import com.tensorflow.mediapipeandroiddemo.gestureRecognition.GestureRecognitionActivity
-import com.tensorflow.mediapipeandroiddemo.imageClassification.ImageClassificationActivity
-import com.tensorflow.mediapipeandroiddemo.imageEmbedder.ImageEmbedderActivity
-import com.tensorflow.mediapipeandroiddemo.objectDetection.ObjectDetectionActivity
-import kotlinx.coroutines.Dispatchers.Main
+import com.tensorflow.mediapipeandroiddemo.gestureRecognition.SignLanguageLearnerActivity
+import com.tensorflow.mediapipeandroiddemo.imageClassification.*
+import com.tensorflow.mediapipeandroiddemo.objectDetection.PPEDetectionActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -50,36 +46,89 @@ class VisionFragment : Fragment() {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_vision, container, false)
         //  view.findViewById<Button>(R.id.button1).setOnClickListener()
-        val objectDetectionCardviewButton = view.findViewById<CardView>(R.id.objectDetectionCardview);
-        objectDetectionCardviewButton.setOnClickListener()
+
+        //Classifications
+        val landmarkClassificationNorthAmericaCardviewButton = view.findViewById<CardView>(R.id.LandmarkDetectionNorthAmericaCardview);
+        landmarkClassificationNorthAmericaCardviewButton.setOnClickListener()
+        {
+            Log.d("landmarkClassificationNorthAmericaCardviewButton: ", "Selected")
+            val intent = Intent (getActivity(), NorthAmericaLandmarkClassificationActivity::class.java)
+            getActivity()?.startActivity(intent)
+
+        }
+
+        val landmarkClassificationSouthAmericaCardviewButton = view.findViewById<CardView>(R.id.LandmarkDetectionSouthAmericaCardview);
+        landmarkClassificationSouthAmericaCardviewButton.setOnClickListener()
+        {
+            Log.d("landmarkClassificationSouthAmericaCardviewButton: ", "Selected")
+            val intent = Intent (getActivity(), SouthAmericaLandmarkClassificationActivity::class.java)
+            getActivity()?.startActivity(intent)
+
+        }
+
+        val landmarkClassificationAsiaCardviewButton = view.findViewById<CardView>(R.id.LandmarkDetectionAsiaCardview);
+        landmarkClassificationAsiaCardviewButton.setOnClickListener()
+        {
+            Log.d("landmarkClassificationAsiaCardviewButton: ", "Selected")
+            val intent = Intent (getActivity(), AsiaLandmarkClassificationActivity::class.java)
+            getActivity()?.startActivity(intent)
+
+        }
+
+        val landmarkClassificationAntarticaCardviewButton = view.findViewById<CardView>(R.id.LandmarkDetectionAntarticaCardview);
+        landmarkClassificationAntarticaCardviewButton.setOnClickListener()
+        {
+            Log.d("landmarkClassificationAntarticaCardviewButton: ", "Selected")
+            val intent = Intent (getActivity(), AntarcticaLandmarkClassificationActivity::class.java)
+            getActivity()?.startActivity(intent)
+
+        }
+
+        val landmarkClassificationEuropeCardviewButton = view.findViewById<CardView>(R.id.LandmarkDetectionEuropeCardview);
+        landmarkClassificationEuropeCardviewButton.setOnClickListener()
         {
             Log.d("object Detection cardview: ", "Selected")
-            val intent = Intent (getActivity(), ObjectDetectionActivity::class.java)
+            val intent = Intent (getActivity(), EuropeLandmarkClassificationActivity::class.java)
             getActivity()?.startActivity(intent)
 
         }
 
-        val imageClassificationCarviewButton = view.findViewById<CardView>(R.id.imageClassificationCardview);
-        imageClassificationCarviewButton.setOnClickListener()
+        val landmarkClassificationAfricaCardviewButton = view.findViewById<CardView>(R.id.LandmarkDetectionAfricaCardview);
+        landmarkClassificationAfricaCardviewButton.setOnClickListener()
         {
-            Log.d("Image Classification cardview: ", "Selected")
-            val intent = Intent (getActivity(), ImageClassificationActivity::class.java)
+            Log.d("object Detection cardview: ", "Selected")
+            val intent = Intent (getActivity(), AfricaLandmarkClassificationActivity::class.java)
             getActivity()?.startActivity(intent)
+
         }
 
-        val imageEmbedderCardviewButton = view.findViewById<CardView>(R.id.imageEmbedderCardview);
-        imageEmbedderCardviewButton.setOnClickListener()
+
+
+        //Image Segmentation
+        val foodSegmentationCarviewButton = view.findViewById<CardView>(R.id.foodSegmentationCardview);
+        foodSegmentationCarviewButton.setOnClickListener()
         {
-            Log.d("image Embedder cardview: ", "Selected")
-            val intent = Intent (getActivity(), ImageEmbedderActivity::class.java)
+            Log.d("Food Segmentation cardview: ", "Selected")
+            val intent = Intent (getActivity(), FoodSegmentationActivity::class.java)
             getActivity()?.startActivity(intent)
         }
 
-        val gestureRecognitionCardviewButton = view.findViewById<CardView>(R.id.gestureRecognitionCardview);
-        gestureRecognitionCardviewButton.setOnClickListener()
+        //Object Detection
+        val PPEDectionCardviewButton = view.findViewById<CardView>(R.id.PPEDetectionCardview);
+        PPEDectionCardviewButton.setOnClickListener()
+        {
+            Log.d("PPE detection cardview: ", "Selected")
+            val intent = Intent (getActivity(), PPEDetectionActivity::class.java)
+            getActivity()?.startActivity(intent)
+        }
+
+
+        //Hand Landmark
+        val SignLanguageLearnerActivityCardviewButton = view.findViewById<CardView>(R.id.SignLanguageLearnerCardview);
+        SignLanguageLearnerActivityCardviewButton.setOnClickListener()
         {
             Log.d("gesture Recognition cardview: ", "Selected")
-            val intent = Intent (getActivity(), GestureRecognitionActivity::class.java)
+            val intent = Intent (getActivity(), SignLanguageLearnerActivity::class.java)
             getActivity()?.startActivity(intent)
         }
 

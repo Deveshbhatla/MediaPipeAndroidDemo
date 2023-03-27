@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".imageClassification.ImageClassificationActivity">
+    tools:context=".audioClassification.MusicGenreClassificationActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Image Classification Activity"
+        android:text="Music Genre Classification Activity"
         android:textSize="35sp"
         android:layout_marginTop="50dp"/>
 </RelativeLayout>

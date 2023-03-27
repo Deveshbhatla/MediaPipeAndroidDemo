@@ -12,36 +12,54 @@
         android:theme="@style/Theme.MediaPipeAndroidDemo"
         tools:targetApi="31">
         <activity
-            android:name=".audioEmbedder.AudioEmbedderActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar"/>
-        <activity
-            android:name=".audioClassification.AudioClassificationActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar"/>
-        <activity
-            android:name=".textEmbedder.TextEmbedderActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
-        <activity
-            android:name=".textClassification.TextClassificationActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
-        <activity
-            android:name=".gestureRecognition.GestureRecognitionActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
-        <activity
-            android:name=".imageEmbedder.ImageEmbedderActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
-        <activity
-            android:name=".imageClassification.ImageClassificationActivity"
+            android:name=".ImageSegmentation.FoodSegmentationActivity"
             android:exported="false"
             android:label="@string/title_activity_image_classification"
             android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
         <activity
-            android:name=".objectDetection.ObjectDetectionActivity"
+            android:name=".imageClassification.NorthAmericaLandmarkClassificationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image_classification"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".imageClassification.SouthAmericaLandmarkClassificationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image_classification"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".imageClassification.AsiaLandmarkClassificationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image_classification"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".imageClassification.AntarcticaLandmarkClassificationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image_classification"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".imageClassification.EuropeLandmarkClassificationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image_classification"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".imageClassification.AfricaLandmarkClassificationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_image_classification"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".gestureRecognition.SignLanguageLearnerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".objectDetection.PPEDetectionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".audioClassification.MusicGenreClassificationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
+        <activity
+            android:name=".textClassification.SpamDetectionActivity"
             android:exported="false"
             android:theme="@style/Theme.MediaPipeAndroidDemo.NoActionBar" />
         <activity

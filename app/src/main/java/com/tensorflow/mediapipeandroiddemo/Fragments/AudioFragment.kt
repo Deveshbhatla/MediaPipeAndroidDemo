@@ -9,10 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import com.tensorflow.mediapipeandroiddemo.R
-import com.tensorflow.mediapipeandroiddemo.audioClassification.AudioClassificationActivity
-import com.tensorflow.mediapipeandroiddemo.audioEmbedder.AudioEmbedderActivity
-import com.tensorflow.mediapipeandroiddemo.textClassification.TextClassificationActivity
-import com.tensorflow.mediapipeandroiddemo.textEmbedder.TextEmbedderActivity
+import com.tensorflow.mediapipeandroiddemo.audioClassification.MusicGenreClassificationActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -44,22 +41,22 @@ class AudioFragment : Fragment() {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_audio, container, false)
 
-        val textClassificationCardviewButton = view.findViewById<CardView>(R.id.audioClassificationCardview);
-        textClassificationCardviewButton.setOnClickListener()
+        val musicGenreClassificationCardviewButton = view.findViewById<CardView>(R.id.musicGenreClassificationCardview);
+        musicGenreClassificationCardviewButton.setOnClickListener()
         {
             Log.d("Audio Classification cardview: ", "Selected")
-            val intent = Intent (getActivity(), AudioClassificationActivity::class.java)
+            val intent = Intent (getActivity(), MusicGenreClassificationActivity::class.java)
             getActivity()?.startActivity(intent)
 
         }
-
-        val textEmbedderCardviewButton = view.findViewById<CardView>(R.id.audioEmbedderCardview);
-        textEmbedderCardviewButton.setOnClickListener()
-        {
-            Log.d("Audio Embedder cardview: ", "Selected")
-            val intent = Intent (getActivity(), AudioEmbedderActivity::class.java)
-            getActivity()?.startActivity(intent)
-        }
+//
+//        val textEmbedderCardviewButton = view.findViewById<CardView>(R.id.audioEmbedderCardview);
+//        textEmbedderCardviewButton.setOnClickListener()
+//        {
+//            Log.d("Audio Embedder cardview: ", "Selected")
+//            val intent = Intent (getActivity(), AudioEmbedderActivity::class.java)
+//            getActivity()?.startActivity(intent)
+//        }
 
         return view;    }
 
